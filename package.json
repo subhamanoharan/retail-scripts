@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --version && tsc -p tsconfig.json",
-    "setup": "npm run build && node ./dist/index.js"
+    "setup:weight": "npm run build && node ./dist/weightBasedItemsSetup.js",
+    "setup:items": "npm run build && node ./dist/itemsSetup.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "axios-cookiejar-support": "^0.4.2",
     "bluebird": "^3.5.4",
     "config": "^3.0.1",
+    "faker": "^4.1.0",
     "neat-csv": "^5.0.0",
     "tough-cookie": "^3.0.1",
     "ts-node": "^7.0.0",
