@@ -1,0 +1,25 @@
+{
+  "name": "retail-scripts",
+  "version": "1.0.0",
+  "description": "Scripts to setup data",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --version && tsc -p tsconfig.json",
+    "setup": "npm run build && node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "bluebird": "^3.5.4",
+    "config": "^3.0.1",
+    "neat-csv": "^5.0.0",
+    "tough-cookie": "^3.0.1",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.6"
+  }
+}
